@@ -1,0 +1,24 @@
+{
+    "name": "tea-ebook/oauth2-bundle-extended",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vlad Mararu-Nicoara",
+            "email": "vmararunicoara@pentalog.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "ramsey/uuid": "^4.2",
+        "trikoder/oauth2-bundle": "3.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TeaEbook\\Oauth2BundleExtended\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
