@@ -1,0 +1,8 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    TeaEbook\Oauth2BundleExtended\Command\CreateClientCommand: ~
+
+    TeaEbook\Oauth2BundleExtended\EventSubscriber\ClientMappingSubscriber: ~

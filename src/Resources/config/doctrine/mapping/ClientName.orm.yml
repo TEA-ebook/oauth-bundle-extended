@@ -1,0 +1,21 @@
+TeaEbook\Oauth2BundleExtended\Entity\ClientName:
+    type: entity
+    table: oauth2_client_name
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+            options:
+                unsigned: true
+
+    fields:
+        name:
+            nullable: true
+
+    oneToOne:
+        client:
+            targetEntity: Trikoder\Bundle\OAuth2Bundle\Model\Client
+            joinColumn:
+                name: client_identifier
+                referencedColumnName: identifier
